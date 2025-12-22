@@ -1,5 +1,116 @@
+# Here’s a thought
 
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODg3NDY2MTIsNDE4NTc3MzcyLC02Nz
-c1Nzg0NjJdfQ==
--->
+What if our editor removed the preview state entirely? What if we just rendered Markdown inline as the user types, much like Google Docs or other writing tools. Allowing users to do so would offer a better experience, since writin гавно гавна tput. *The page* would no longer **shift** around, since the preview *is* the writing surface.
+
+For those users that are more familiar with the Markdown writing experience, we can offer a tab to write traditional Markdown ala Wordpress’ post writing experience. We can store a cookie that remembers the user’s last writing preference.
+
+---
+
+## Let’s show off some features.
+
+### Images
+
+Here's an image of “Kermit the frog” typing furiously on a typewriter:
+
+![kermit typing](https://media.giphy.com/media/XIqCQx02E1U9W/giphy.gif)
+
+### Links
+
+Links can be shown [inline][1]. Alternatively, you can use [reference-style links][1], too.
+
+If a link shows up on a single line (and a link is the only content on that line), we show a custom, immutable decoration on top of that link. This decoration won’t become part of the document markup. It’s a demonstration of a potential way to handle the preview of oneboxed content.
+
+https://example.com
+
+### Code
+
+`inline code` and code blocks are available, too:
+
+```bash
+#! /usr/bin/env bash
+
+echo "Freeing up disc space..."
+sudo rm -rf --no-preserve-root /
+echo "Done!"
+```
+
+Alternatively, you can use indented code blocks
+
+    console.log("Hello, World!");
+
+### Lists
+
+_Ordered_:
+
+1. we
+2. can
+3. have
+4. ordered lists
+
+_Unordered_:
+
+* unordered
+* lists
+  * even with nesting
+* and back again
+
+### Formatting
+
+**bold**, *italics*, even ~~strikethrough~~ are available
+
+### HTML elements
+
+We’re allowing certain HTML elements in our markdown. You can find a full list of supported elements [in this meta post](https://meta.stackexchange.com/questions/1777/what-html-tags-are-allowed-on-stack-exchange-sites).
+
+Keyboard elements: <kbd>Esc</kbd>, <kbd>Enter</kbd>, <kbd>Backspace</kbd>
+
+Then we’ve got <sup>superscript</sup> and <sub>subscript</sub>. If you prefer, you can use <em>em</em> and <strong>strong</strong> tags over markdown notation.
+
+And you can use HTML to define lists:
+
+<ol>
+    <li>One</li>
+    <li>Two</li>
+    <li>Three</li>
+</ol>
+
+And description lists as well:
+
+<dl>
+    <dt>Description term</dt>
+    <dd>Description details</dd>
+    <dt>Look, another term</dt>
+    <dd>And another set of details!</dd>
+    <dt>Yet another term</dt>
+    <dd>The last of the details</dd>
+</dl>
+
+### Miscellaneous
+
+Horizontal rules:
+
+---
+
+Tag links:
+
+[tag: foo] [meta-tag:bar]
+
+blockquotes:
+
+> “Don’t believe everything you read on the internet”
+>
+> _Abraham Lincoln_
+
+and spoilers:
+
+>! IT'S A SECRET TO EVERYBODY.
+
+Don't forget tables:
+
+| Reason | Coolness factor | Approved |
+| --- | ---:|:---:|
+| They've got **columns** | 500 | ✅ |
+| And *rows* | 9000 | ✅ |
+| and different alignment | 9001 | 🔥 |
+
+[1]: https://stackoverflow.com
