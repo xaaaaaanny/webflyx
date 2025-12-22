@@ -5,7 +5,8 @@
 - 12 Years a Slave
 - The Big Short
 - 12 Monkeys
+- Elder Ring
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzEzNzM3MTI3LC02Nzc1Nzg0NjJdfQ==
+eyJoaXN0b3J5IjpbNDE4NTc3MzcyLC02Nzc1Nzg0NjJdfQ==
 -->
